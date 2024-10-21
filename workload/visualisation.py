@@ -13,7 +13,7 @@ def plotly_piechart(data, labels, values, title):
             labels=data[labels].values,
             values=data[values].values,
             hole=0.3,
-            texttemplate="%{value:.2f}",
+            texttemplate="%{percent:.2%}",
             hovertemplate="%{label}: %{value} hours <extra></extra>",
             marker=dict(colors=["2a9d8f", "264653"])
         )
