@@ -27,7 +27,7 @@ def run():
     with st.sidebar:
         st.header(f"Week: {week_num}")
 
-    source_dir = f"./data/week{week_num}"
+    source_dir = f"data/week{week_num}"
     member_files = os.listdir(source_dir)
 
     if member_files:
